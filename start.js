@@ -71,7 +71,7 @@ await RzLModz.connect({timeoutMs: 30*1000})
 fs.writeFileSync('./action/connection/qrcode.json', JSON.stringify(RzLModz.base64EncodedAuthInfo(), null, '\t'))
 //   
 
-console.log(bgcolor('XILVER - MOODS ©WhatsApp_Bot • Created By > [ ®Lord_RzLModz ]\n-------> Ready to use❗', 'gray'))
+console.log(bgcolor('XILVER - MOODS ©WhatsApp_Bot • Created By > [ ®KazuKi ]\n-------> Ready to use❗', 'gray'))
 //
 await sleep(3000)
 
@@ -102,7 +102,7 @@ console.log({json})
 const callerId = json[2][0][1].from;
 var vcard = 'BEGIN:VCARD\n' + 'VERSION:3.0\n' + 'FN:' + `${Options.NamaOwner}` + '\n' + `ORG:Developer ${Options.NamaBot}\n` + 'TEL;type=CELL;type=VOICE;waid=' + `${Options.NomorOwner}` + ':+' + `${Options.NomorOwner}` + '\n' + 'END:VCARD'
 RzLModz.sendMessage(callerId, "\`\`\`[ ! ] TERDETEKSI CALL [ ! ]\`\`\`\n\n\`\`\`Gua blok asw !. ingin membuka silahkan hubungi owner!", MessageType.text)
-RzLModz.sendMessage(callerId, { displayname: `${Options.NamaOwner}`, vcard: vcard}, MessageType.contact, {contextInfo: { externalAdReply:{title: `Creator ${Options.NamaBot}`,body:"",previewType:"PHOTO",thumbnail:fs.readFileSync(`./storage/image/thumb.jpg`),sourceUrl:`https://wa.me/6288277562022?text=Assalamualaikum`}}})
+RzLModz.sendMessage(callerId, { displayname: `${Options.NamaOwner}`, vcard: vcard}, MessageType.contact, {contextInfo: { externalAdReply:{title: `Creator ${Options.NamaBot}`,body:"",previewType:"PHOTO",thumbnail:fs.readFileSync(`./storage/image/thumb.jpg`),sourceUrl:`https://wa.me/6283113989278?text=Assalamualaikum`}}})
 await sleep(5000)
 await RzLModz.blockUser(callerId, "add")
 })
